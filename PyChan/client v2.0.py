@@ -24,4 +24,4 @@ client = server.connect((host, port))
 data = server.recv(1024)
 print(f"\t{data.decode()}")
 print("\n\tExiting.\n")
-server.close()
+server.close(
