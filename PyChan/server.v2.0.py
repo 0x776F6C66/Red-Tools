@@ -22,8 +22,8 @@ def Handler(conn, addr):
 #send messages
 def broadcast(msg):
     for client in clients:
-        if not client:
-            client.send(msg)
+        # if not client: blocking condition
+        client.send(msg)
 
 #accept connections and add the client to a list.
 def accept_conn():
