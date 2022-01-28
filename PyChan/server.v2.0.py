@@ -11,7 +11,7 @@ def Handler(conn, addr):
             msg = conn.recv(1024)
             if msg:
                 print(f"{addr}: {msg.decode()}")
-                broadcast(msg)
+                broadcast(conn, msg)
             else:
                 conn.close()
                 clients.remove(conn)
@@ -20,17 +20,20 @@ def Handler(conn, addr):
             continue
 
 #send messages
-def broadcast(msg):
+def broadcast(conn, msg):
+
     for client in clients:
-        # if not client: blocking condition
-        client.send(msg)
+        print(client == conn)
+        if conn != client:
+            # if not client: blocking condition
+            client.send(msg)
 
 #accept connections and add the client to a list.
 def accept_conn():
     while True:
         try:
             conn, addr = server.accept()
-            conn.send(b' Welcome to the server')
+            # conn.send(b' Welcome to the server')
             print(f"[-] {addr} connected.")
             clients.append(conn)
             Thread(target=Handler, args=(conn, addr)).start()
@@ -61,4 +64,5 @@ if __name__ == "__main__":
     server.bind((host, port))
     print(f"[-] Listening on {host} : {port}")
     server.listen(20)
+    
     accept_conn()
