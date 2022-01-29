@@ -58,8 +58,6 @@ def accept_conn():
                     clients.append(conn)
                     users.append(user)
                     address.append(addre)
-                    for add in address:
-                        print(add)
                     Thread(target=Handler, args=(conn, addr, username, user, addre)).start()
         except KeyboardInterrupt:
             for client in clients:
