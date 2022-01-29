@@ -9,20 +9,20 @@ users = []
 address = []
 
 #receive messages.
-def Handler(conn, addr, username, user, addre):
+def Handler(conn, username, user, addre):
     while True:
         try:
             msg = conn.recv(1024)
             if msg:
-                print(user + ":"+ msg.decode())
-                msg1 = (username + (" :").encode() + msg)
+                print(user + " : "+ msg.decode())
+                msg1 = (username + (" : ").encode() + msg)
                 broadcast(msg1, conn)
             else:
                 conn.close()
                 clients.remove(conn)
                 users.remove(user)
                 address.remove(addre)
-                print(f"{addr} : disconnected.")
+                print(f"{addre} : {user}: disconnected.")
         except:
             continue
 
@@ -44,7 +44,7 @@ def accept_conn():
             conn, addr = server.accept()
             username = conn.recv(1024)
             user = username.decode()
-            addre = addr[0]
+            addre = addr[1]
             if addre in address:
                 conn.send(b"There is already a connection....")
                 conn.close()
@@ -54,7 +54,7 @@ def accept_conn():
                     conn.close()
                 else:
                     conn.send(b' Welcome to the server.......')
-                    print(f"[-] {addr[0]} : {user} connected.")
+                    print(f"[-] {addr[1]} : {user} connected.")
                     clients.append(conn)
                     users.append(user)
                     address.append(addre)
