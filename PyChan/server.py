@@ -6,10 +6,10 @@ import sys
 
 clients = []
 users = []
-addresses = []
+address = []
 
 #receive messages.
-def Handler(conn, addr, username, user):
+def Handler(conn, addr, username, user, addre):
     while True:
         try:
             msg = conn.recv(1024)
@@ -21,6 +21,7 @@ def Handler(conn, addr, username, user):
                 conn.close()
                 clients.remove(conn)
                 users.remove(user)
+                address.remove(addre)
                 print(f"{addr} : disconnected.")
         except:
             continue
@@ -43,7 +44,8 @@ def accept_conn():
             conn, addr = server.accept()
             username = conn.recv(1024)
             user = username.decode()
-            if addr[0] in addresses:
+            addre = addr[0]
+            if addre in address:
                 conn.send(b"There is already a connection....")
                 conn.close()
             else:
@@ -55,8 +57,10 @@ def accept_conn():
                     print(f"[-] {addr[0]} : {user} connected.")
                     clients.append(conn)
                     users.append(user)
-                    addresses.append(addr[0])
-                    Thread(target=Handler, args=(conn, addr, username, user)).start()
+                    address.append(addre)
+                    for add in address:
+                        print(add)
+                    Thread(target=Handler, args=(conn, addr, username, user, addre)).start()
         except KeyboardInterrupt:
             for client in clients:
                 client.close()
