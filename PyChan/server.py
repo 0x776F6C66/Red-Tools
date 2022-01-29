@@ -88,5 +88,5 @@ if __name__ == "__main__":
 
     server.bind((host, port))
     print(f"[-] Listening on {host} : {port}")
-    server.listen(20)
+    server.listen(300)
     accept_conn()
