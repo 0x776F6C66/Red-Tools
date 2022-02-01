@@ -17,13 +17,13 @@ actually to append a network address to your data.
 ![Packet Structure](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPv4_Packet-en.svg/1280px-IPv4_Packet-en.svg.png)
 
 ## Frames 
-[Frames](https://en.wikipedia.org/wiki/Frame_(networking)) are used to help us identify the device we want to communicate with on the current circuit. Frames contain the link address which is important in this project
-plus other stuff.
+[Frames](https://en.wikipedia.org/wiki/Frame_(networking)) are used to help us identify the device we want to communicate with on the current circuit. Frames contain the link address which is important in this project. It helps to identify using the physical address of the device's
+[MAC addresss(Media Access Control.)](https://en.wikipedia.org/wiki/MAC_address)
 
 ![Frame Structure.](https://upload.wikimedia.org/wikipedia/commons/1/13/Ethernet_Type_II_Frame_format.svg)
 
-Note: There are two addresses we've talked about. THe network address which is on a packet and the link address which is on the frame. The network address is the
-      final destination while the link address is like say the physical address of the machine we're communicating with.
+**Note: There are two addresses we've talked about. THe network address which is on a packet and the link address which is on the frame. The network address is the
+      final destination while the link address is like say the physical address of the machine we're communicating with.**
       
  ## How Data is exchanged in a network.
  To be continued on day two........
