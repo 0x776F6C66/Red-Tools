@@ -10,6 +10,7 @@ Before we start, we need to know how data is sent across a network. A [Packet](h
 part of the packet where all details about the packet are. Think of it as the content page of a book. It contains information such as destination address of the
 packet, the sender, the protocol, the length of the packet e.t.c while the user data is the message or actual content of the packet.The main purpose of a packet is
 actualy to append a network address to your data. 
+![Packet Strucure](https://en.wikipedia.org/wiki/IPv4#/media/File:IPv4_Packet-en.svg)
 
 ## Frames. 
 [Frames](https://en.wikipedia.org/wiki/Frame_(networking)) are used to help us identify the device we want to communicate with on the current circuit. Frames contain the link address which is important in this project
