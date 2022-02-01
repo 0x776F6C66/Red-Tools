@@ -16,7 +16,7 @@ actually to append a network address to your data.
 
 ![Packet Structure](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPv4_Packet-en.svg/1280px-IPv4_Packet-en.svg.png)
 
-## Frames. 
+## Frames 
 [Frames](https://en.wikipedia.org/wiki/Frame_(networking)) are used to help us identify the device we want to communicate with on the current circuit. Frames contain the link address which is important in this project
 plus other stuff.
 
