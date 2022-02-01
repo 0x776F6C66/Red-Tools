@@ -18,7 +18,7 @@ actually to append a network address to your data.
 
 ## Frames 
 [Frames](https://en.wikipedia.org/wiki/Frame_(networking)) are used to help us identify the device we want to communicate with on the current circuit. Frames contain the link address which is important in this project. It helps to identify using the physical address of the device's
-[MAC addresss(Media Access Control.)](https://en.wikipedia.org/wiki/MAC_address)
+[MAC addresss](https://en.wikipedia.org/wiki/MAC_address)(Media Access Control).
 
 ![Frame Structure.](https://upload.wikimedia.org/wikipedia/commons/1/13/Ethernet_Type_II_Frame_format.svg)
 
