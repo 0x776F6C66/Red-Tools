@@ -25,15 +25,15 @@ packet, the sender, the protocol, the length of the packet e.t.c while the user 
 ![Packet Structure](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPv4_Packet-en.svg/1280px-IPv4_Packet-en.svg.png)
 
 ## Frames 
-[Frames](https://en.wikipedia.org/wiki/Frame_(networking)) are used to help us identify the device we want to communicate with on the current circuit. Frames contain the link address which is important in this project. It helps to identify using the physical address of the device known as its [MAC address](https://en.wikipedia.org/wiki/MAC_address)(Media Access Control Address).
+[Frames](https://en.wikipedia.org/wiki/Frame_(networking)) are used to help us identify the device we want to communicate with on the current circuit. Frames contain the MAC address which is important in this project. It helps to identify using the decice's [MAC address](https://en.wikipedia.org/wiki/MAC_address)(Media Access Control Address).
 
 ![Frame Structure.](https://upload.wikimedia.org/wikipedia/commons/1/13/Ethernet_Type_II_Frame_format.svg)
 
-**Note**: There are two addresses we've talked about. The network address which is on the packet and the link address which is on the frame. The network address is the final destination while the link address is like say the physical address of the machine we're communicating with.
+**Note**: There are two addresses we've talked about. The network address which is on the packet and the MAC address which is on the frame.
 
 #### day two.................
 # Address Resolution Protocol(ARP)
-
+![TCP/IP OSI model](https://www.guru99.com/images/1/102219_1135_TCPIPvsOSIM1.png)
 According to the [tcp/ip](https://www.javatpoint.com/computer-network-tcp-ip-model) and [OSI model](https://www.forcepoint.com/cyber-edu/osi-model) when a packet  reaches it's intended network, it interacts with the physical layer first before interacting with any other layers. We now go back to our packet. It has a network address which assists in knowing which network and host it is being to sent to but it has to interact first with the physical layer before talking with the network layer where the network adress is better understood. So now because we're dealing with the physical layer, we need "physical stuff". The router of the receiving network has got the packet but the router is part of the physical layer. How will it know where to send the packet because the packet has no physical address it can understand? This is where [ARP](https://www.techtarget.com/searchnetworking/definition/Address-Resolution-Protocol-ARP) comes in.
 
 For the router to know which physical device it's supposed to send the packet, it calls for the assistance of ARP. Address Resolution Protocol esentially works by converting the ip address of the packet to it's corresponding MAC address. So the ARP broadcasts an ARP packet to every computer on the network....
