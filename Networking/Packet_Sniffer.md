@@ -8,9 +8,9 @@ Aim of this project is to understand how data is sent, received and processed wi
 The main motivation behind the study is because I am naturally curious and I love to learn. The other reason is that it's an exciting venture on itself. Have fun and use the work here for good purposes.
 
 # NIC (Network Interface cards.)
-![Network Interface Card]()(https://www.tutorialspoint.com/assets/questions/media/17618/chip.jpg) ![External NIC](https://www.tutorialspoint.com/assets/questions/media/17618/network.jpg)
+![Network Interface Card](https://www.tutorialspoint.com/assets/questions/media/17618/chip.jpg) ![External NIC](https://www.tutorialspoint.com/assets/questions/media/17618/network.jpg)
 
-Computers are connected to networks via a hardware components known as [Network Interface Cards](https://www.tutorialspoint.com/what-is-network-interface-card-nic). Each NIC has a hardware address (the one we're calling the MAC address). This address is literally "burned" into the machine so it is permanent. When a computer is connected to a router, it's given an ip address to identify it from other computers in the network. Now our host has two addresses, the IP address and it's MAC address.
+Computers are connected to networks via hardware components known as [Network Interface Cards](https://www.tutorialspoint.com/what-is-network-interface-card-nic). Each NIC has a hardware address (the one we're calling the MAC address). This address is literally "burned" into the machine so it is permanent. When a computer is connected to a router, it's given an ip address to identify it from other computers in the network. Now our host has two addresses, the IP address and it's MAC address.
 
 # How Data is exchanged in a network.
 
