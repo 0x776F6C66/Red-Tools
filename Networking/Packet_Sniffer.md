@@ -1,7 +1,7 @@
 # Network Sniffing.
 
 This is part of the [15 days of hacking challenge](https://github.com/P4rsz/15-days-of-Hacking)
-In collaboration with [fr334aks-TTW](https://github.com/fr334aks-TTW/15-days-of-hacking).5
+In collaboration with [Fr334aks-TTW](https://github.com/fr334aks-TTW/15-days-of-hacking).5
 
 Aim of this project is to understand how data is sent, received and processed within networks and later build a sniffer tool based on the knowledge.
 The main motivation behind the study is because I am naturally curious and I love to learn. The other reason is that it's an exciting venture on itself. Have fun and use the work here for good purposes.
