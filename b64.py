@@ -37,7 +37,7 @@ def main():
     elif option == "-d":
         decode(string)
     else:
-        print(f"There is no option as {option}.\n")
+        print(f"\nThere is no option as {option}.\n")
         print("USAGE: <base64.py> <[-d]ecode/[-e]ncode> <shift> <string>")
         print("Example: base64.py -e 50 abcdefgh\n")
         exit()
