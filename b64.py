@@ -16,7 +16,7 @@ def encode(string_):
         try:
             encoded = base64.b64encode(bytes(string_.encode()))
             string_ = encoded.decode()
-            print(f"\nShift {x}: {string_}")
+            print(f"\nSHIFT {x}: {string_}")
         except:
             exit()
 
@@ -25,7 +25,7 @@ def decode(string_):
         try:
             decoded = base64.b64decode(string_)
             string_ = decoded.decode()
-            print(f"\nShift {x}: {string_}")
+            print(f"\nSHIFT {x}: {string_}")
         except:
             exit()
 
