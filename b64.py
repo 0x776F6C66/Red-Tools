@@ -38,7 +38,7 @@ def decode(string_):
 
 #main function.
 def main():
-    print("\n\t-- Base64 shift Decoder and Encoder -- \n")
+    print("\n\t-- Base64 shift Decoder and Encoder by PAR$Z-- \n")
     if option == "-e":
         encode(string)
     elif option == "-d":
