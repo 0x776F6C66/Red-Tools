@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import base64
 import sys
-import itertools
 
 option = sys.argv[1]
 shift = int(sys.argv[2])
@@ -18,7 +17,7 @@ def encode(string_):
             exit()
 
 def decode(string_):
-    for i in itertools.count():
+    for i in range(1,):
         try:
             decoded = base64.b64decode(string_)
             string_ = decoded.decode()
