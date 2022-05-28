@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import base64
 import sys
+import itertools
 
 if len(sys.argv) != 4:
     print("USAGE: <base64.py> <[-d]ecode/[-e]ncode> <shift> <string>")
@@ -21,7 +22,7 @@ def encode(string_):
             exit()
 
 def decode(string_):
-    for x in range(1, shift+1):
+    for i in itertools.count():
         try:
             decoded = base64.b64decode(string_)
             string_ = decoded.decode()
@@ -32,7 +33,7 @@ def decode(string_):
 
 def main():
     print("\n=====================================================")
-    print("\n Base64 shift Decoder and Encoder by PAR$Z")
+    print("\n Base64 shift Decoder and Encoder by wo1fbit")
     print("\n=====================================================")
     if option == "-e":
         encode(string)
