@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 import base64
 import sys
+import itertools
 
 option = sys.argv[1]
-shift = int(sys.argv[2])
-string = sys.argv[3]
 
-def encode(string_):
+def encode(string_, shift):
+    string = sys.argv[3]
+
     for x in range(1, shift+1):
         try:
             encoded = base64.b64encode(bytes(string_.encode()))
@@ -17,11 +18,11 @@ def encode(string_):
             exit()
 
 def decode(string_):
-    for i in range(1,):
+    for _ in itertools.count():
         try:
             decoded = base64.b64decode(string_)
             string_ = decoded.decode()
-            print(f"\nSHIFT {x}: {string_}")
+            print(f"\n{string_}")
         except:
             exit()
 
@@ -31,13 +32,17 @@ def main():
     print("\n Base64 shift Decoder and Encoder by wo1fbit")
     print("\n=====================================================")
     if option == "-e":
-        encode(string)
+        shift = int(sys.argv[2])
+        string = sys.argv[3]
+        encode(string, shift)
     elif option == "-d":
+        string = sys.argv[2]
         decode(string)
     else:
         print(f"\nThere is no option as {option}.\n")
         print("USAGE: <base64.py> <[-d]ecode/[-e]ncode> <shift> <string>")
         print("Example: base64.py -e 50 abcdefgh\n")
+        print("Example: base64.py -d abcdefgh\n")
         exit()
 
 if __name__ == "__main__":
