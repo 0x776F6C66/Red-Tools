@@ -3,11 +3,6 @@ import base64
 import sys
 import itertools
 
-if len(sys.argv) != 4:
-    print("USAGE: <base64.py> <[-d]ecode/[-e]ncode> <shift> <string>")
-    print("Example: base64.py -e 50 abcdefgh")
-    exit()
-
 option = sys.argv[1]
 shift = int(sys.argv[2])
 string = sys.argv[3]
@@ -17,7 +12,7 @@ def encode(string_):
         try:
             encoded = base64.b64encode(bytes(string_.encode()))
             string_ = encoded.decode()
-            if x = shift:
+            if x == shift:
                 print(f"\nSHIFT {x}: {string_}")
         except:
             exit()
