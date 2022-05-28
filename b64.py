@@ -3,6 +3,12 @@ import base64
 import sys
 import itertools
 
+if not len(sys.argv[1:]):
+    print("USAGE: <base64.py> <[-d]ecode/[-e]ncode> <shift> <string>")
+    print("Encoding : base64.py -e 50 abcdefgh\n")
+    print("Decoding : base64.py -d abcdefgh\n")
+    exit()
+
 option = sys.argv[1]
 
 def encode(string_, shift):
