@@ -11,10 +11,11 @@ import getopt
 ip = False
 
 def usage():
-    print("usage: reg.py [options] file.")
+    print("usage: log_regex.py [options] file.")
     print("")
     print("Options")
     print("-------")
+    print("-h              - print this and exit.")
     print("-i              - search for Ip addresses.")
     print("-f --file=file  - file to check.")
     exit()
