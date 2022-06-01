@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+#@author:wolf
 
-#@author:wolfbit
 #A friend thought of creating a script/tool that would help us parse log files to make getting specific info fast. This script is the outcome.
 #I/we will continue to update and maintain the code as needs arises.
 
