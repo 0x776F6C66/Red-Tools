@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 #@author:Calvin Kimani (@wolf)
 
+                                                        ####IMPORTANT####
+# /////    As of now, the script works like this.......It takes an ip address, adds it to the /etc/hosts.allow file. This makes the ssh server.  /////
+# /////    accept ssh logins from the specified ip. The script then kills all ssh sessions and I mean ALL. Then you can login again. //////
+
 #import necessary modules.
 import os
 import re
