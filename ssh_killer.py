@@ -9,7 +9,7 @@ import sys
 #check if correct arguments are placed.
 if len(sys.argv) != 2:
     print("MAKE SURE YOU PUT YOU IP CORRECTLY ELSE YOU'LL LOCK YOURSELF AND EVERYONE OUT.")
-    print("./ssh_kill.py [your ip].")
+    print("./ssh_killer.py [your ip].")
     exit()
 
 #ip to compare against.
@@ -20,7 +20,7 @@ ip = sys.argv[1]
 
 #main function
 def main():
-    #creata a ssh allow/deny file to allow ssh access to only a specific ip(s).
+    #creata ssh allow/deny file to allow ssh access to only a specific ip(s).
     try:
         os.system("sudo touch /etc/hosts.{allow,deny}")
         os.system(f"sudo echo 'sshd: {ip}' >> /etc/hosts.allow")
