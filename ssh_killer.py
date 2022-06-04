@@ -7,7 +7,7 @@
 
 #import necessary modules.
 import os
-import re
+#import re
 import sys
 
 #check if correct arguments are placed.
