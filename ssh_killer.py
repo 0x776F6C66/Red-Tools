@@ -16,6 +16,13 @@ if len(sys.argv) != 2:
     print("./ssh_killer.py [your ip].")
     exit()
 
+#banner
+def banner():
+    print("================================")
+    print("| SSH Killer                   |")
+    print("| ±uthor: C.Kimani (@wolf)     |")
+    print("================================")
+
 #ip to compare against.
 ip = sys.argv[1]
 
@@ -24,10 +31,11 @@ ip = sys.argv[1]
 
 #main function
 def main():
-    #creata ssh allow/deny file to allow ssh access to only a specific ip(s).
+    #creat an ssh allow/deny file to allow ssh access to only a specific ip(s).
     try:
         os.system("sudo touch /etc/hosts.{allow,deny}")
         os.system(f"sudo echo 'sshd: {ip}' >> /etc/hosts.allow")
+        os.system("[*] Echo succeded.")
     except:
         print("Error creating /etc/hosts.{allow,deny}files.")
         exit()
@@ -64,4 +72,5 @@ def main():
                 #print("Match")
 
 if __name__ == "__main__":
+    banner()
     main()
