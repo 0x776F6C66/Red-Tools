@@ -7,7 +7,7 @@
 
 # IMPORTANT:
 
-Traversing the directory structure of any system is important. However 'cd' command doesn't work in the program. Using os.chdir() in the client program to change directories breaks the client program therefore is not included. I've researched on ways to be able to traverse the target system but everything that would have been an altenative seems not to work. If you know how to fix the problem,it'd be very good of you to share the solution....
+Traversing the directory structure of any system is important. However 'cd' command doesn't work in the program. Using os.chdir() in the client program to change directories breaks the client program therefore is not included. I've researched on ways to be able to traverse the target system but everything that would have been an altenative seems not to work. If you know how to fix the problem, i'd very much appreciate if you shared the solution.... thsnks
 
 Email: shellbash0@gmail.com
 
