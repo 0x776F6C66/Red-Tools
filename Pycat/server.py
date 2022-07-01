@@ -7,7 +7,7 @@ import sys
 
 def banner():
 	os.system("clear")
-	print("=== PyCAT By 0x776F6C66 @wolf ===")
+	print(" PyCAT - 0x776F6C66 ")
 
 if len(sys.argv) != 2:
 	banner()
