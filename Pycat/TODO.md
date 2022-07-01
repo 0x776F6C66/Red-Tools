@@ -1,0 +1,4 @@
+- Add file download feature
+- Add priviledge escalation
+- Add Persistence
+- Add screenshot
