@@ -1,4 +1,4 @@
-# Python replacement for netcat
+# PyCAT
 
 ~~~
  useful where tools like netcat e.t.c are not installed on target system
@@ -12,3 +12,12 @@ Traversing the directory structure of any system is important. However 'cd' comm
 Email: shellbash0@gmail.com
 
 ⭐ twitter.com/0x776F6C66
+---
+
+# INBUILT COMMANDS (You can change them in the source code)
+### Most if not all of the commands you'll execute depend on the type of operating system the client program is deployed
+---
+## 1. get - download files
+~~~
+get /path/to/file
+~~~
