@@ -57,10 +57,10 @@ def handler():
 			if command.lower() == "exit": # terminate the connection when the user wishes
 				return "Connection terminated.. :0"
 
+			result = conn.recv(1024)
+			
 			if result.decode() == "": # check of the client has terminated connection
 				return "Connection terminated.. :0"
-
-			result = conn.recv(1024)
 
 			print(result.decode().strip("\n"))
 	
