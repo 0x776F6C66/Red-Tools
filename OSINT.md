@@ -45,8 +45,7 @@ organization. The script will output usernames in several different formats.
 - google images
 - yandex
 - bing images
-- tin eye
-
+- tineye
 
 ---
 ## DNS
