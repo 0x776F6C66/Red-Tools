@@ -2,7 +2,7 @@
 
 - whois lookups - find info about domains
 - netcraft - whois except better and much more info
-- google hacking - google dorking e.g
+- google hacking (**exploits can be found at exploit db**) - google dorking e.g
 ~~~
 * ext:pdf - search for "pdf" extension
 * intext:"pass" - Searches for "pass" in the content of the page
@@ -18,21 +18,21 @@
 * allintitle - similar to intitle but looks for all the specified terms in the title
 * link:www.google.com - list webpages that have links pointing to google
 * info:www.google.com - show information about google
+
+This is not an exhaustive list. The power of google dorking comes in when the above operators are combined....
 ~~~
-**exploits can be found at exploit db**
 	
 - website recon - e.g Frameworks like recon-ng
 - gitrob & gitleaks - find sensitive info in git repositories
 - shodan -- find devices connected to the internet e.g
 ~~~
-* in search bar: hostname:"domain name" -- find open ports and devices of the specified hostname
+* hostname:"domain name" - find open ports and devices of the specified hostname
 ~~~
 	
-- Email harvesing
+- Email harvesing - **emails harvested could be used to check for passwords in password dumps**
 ~~~
 * theharvester
 ~~~
-**emails harvested could be used to check for password dumps in places like pastebin**
 	
 - Social Searcher - search engine for social media sites
 - Twofi - scan's a user's twittes feed and generates wordlistsa(personalized) for password attacks against the user
