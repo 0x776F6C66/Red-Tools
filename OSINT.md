@@ -35,7 +35,7 @@ This is not an exhaustive list. The power of google dorking comes in when the ab
 ~~~
 	
 - Social Searcher - search engine for social media sites
-- Twofi - scan's a user's twittes feed and generates wordlistsa(personalized) for password attacks against the user
+- Twofi - scan's a user's twitter feed and generates wordlistsa(personalized) for password attacks against the user
 - linkedin2username - script for generating username lists based on LinkedIn data. It requires
 valid LinkedIn credentials and depends on a LinkedIn connection to individuals in the target
 organization. The script will output usernames in several different formats.
