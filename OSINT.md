@@ -2,7 +2,7 @@
 
 - whois lookups - find info about domains
 - netcraft - whois except better and much more info
-- google hacking (**exploits can be found at exploit db**) - google dorking e.g
+- google hacking (**exploits can be found at [exploit db](https://www.exploit-db.com/google-hacking-database)**) - google dorking e.g
 ~~~
 * ext:pdf - search for "pdf" extension
 * intext:"pass" - Searches for "pass" in the content of the page
