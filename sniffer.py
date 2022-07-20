@@ -1,3 +1,5 @@
+## python sniffer. {'todos':'be a simple wireshark'}
+
 import socket
 import subprocess
 from struct import unpack
