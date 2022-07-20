@@ -4,7 +4,7 @@ import socket
 import subprocess
 from struct import unpack
 
-class Socket():
+class Sniffer():
 	"""
 	socket.AF_PACKET is used to send/receive raw packets
 	socket.RAW is used to create a raw socket
